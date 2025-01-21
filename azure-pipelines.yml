@@ -40,4 +40,6 @@ steps:
   displayName: 'Publish npm artifact'
 - task: DotNetCoreCLI@2
   inputs:
+    azureSubscription: 'DevTestLabs'
     command: 'build'
+    requestTimeout: 100000
