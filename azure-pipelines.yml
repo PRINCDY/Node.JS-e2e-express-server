@@ -42,4 +42,3 @@ steps:
   inputs:
     azureSubscription: 'DevTestLabs'
     command: 'build'
-    requestTimeout: 100000
