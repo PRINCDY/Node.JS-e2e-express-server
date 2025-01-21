@@ -38,3 +38,6 @@ steps:
     targetPath: '$(Build.ArtifactStagingDirectory)'
     publishLocation: 'pipeline'
   displayName: 'Publish npm artifact'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
